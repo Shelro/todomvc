@@ -4,6 +4,7 @@ window.onload = function() {
     model.getData(function() {
         var data = model.data;
         if(data.HideComp) isHideComp = true;
+        switchHideButton();
 
         update();
 
