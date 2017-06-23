@@ -1,0 +1,257 @@
+body {
+    background-color: #A5DEE4;
+    text-align: center;
+    font-family: 'megrim', fantasy;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: megrim, fantasy;
+    padding: 40px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+.emphasis {
+    font-family: 'Metro', vast-shadow, sans-serif;
+    font-size: 4em;
+}
+
+.title {
+    display: inline-block;
+}
+
+button, input {
+    font-family: megrim, fantasy;
+}
+
+.todoapp {
+    text-align: center;
+}
+
+.main {
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /*border: 1px solid #999;*/
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.core {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer {
+    border-top: 1px solid #0089A7;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input {
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #555;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#todo-time {
+    width: 150px;
+}
+
+.invisible {
+    display: none;
+}
+
+.todo-item {
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: 30px;
+    list-style: none;
+    text-align: left;
+}
+
+.todo-item:hover {
+    background-color: rgba(129, 199, 212, 0.5);
+    cursor: pointer;
+}
+
+.todo-item .content {
+    display: inline-block;
+    min-width: 200px;
+    margin-left: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #0089A7;
+    background-color: rgba(165, 222, 228, 0.5);
+}
+
+.priority {
+    background-color: #81C7D4;
+}
+
+.com-button {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    font-size: 20px;
+    background-color: margin: 10px;
+    margin: 20px;
+}
+
+.com-button:hover {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    font-size: 20px;
+    background-color: margin: 10px;
+    margin: 20px;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.delete {
+    border: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../img/close.png");
+}
+
+.edit {
+    float: left;
+    margin-left: 5px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../img/edit.png");
+}
+
+
+/* RADIO */
+
+.regular-radio {
+    float: left;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-radio:checked {
+    float: left;
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #0089a7;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px;
+}
+
+#add {
+    background-color: transparent;
+    border: 1px solid black;
+    height: 30px;
+    font-size: 20px;
+    background-color: margin: 10px;
+    margin: 20px;
+}
+
+#expand {
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/expand.png");
+}
+
+@font-face {
+    font-family: Metro;
+    src: url('../fonts/Metro.ttf');
+}
+
+
+/* 自适应样式 */
+
+@media (max-width: 378px) {
+    body {
+        font-size: 8px;
+        position: relative;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    .header {
+        text-align: center;
+    }
+    .main {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .todo-input {
+        margin-left: 2px;
+        margin-right: -5px;
+    }
+    .todo-item {
+        padding: 5px;
+        font-size: 12px;
+        margin-left: -20px;
+        margin-right: 10px;
+    }
+    .com-button {
+        height: 15px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    .com-button：hover {
+        height: 15px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    .delete {
+        width: 15px;
+        height: 15px;
+        margin-top: -15px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+    }
+    .edit {
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+    }
+    /* RADIO */
+    .regular-radio {
+        padding: 3px;
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+    }
+    .regular-radio:checked {
+      width: 10px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+    }
+}

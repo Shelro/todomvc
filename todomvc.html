@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport"/>
+    <title>Yiyi's Todo List</title>
+    <link rel="stylesheet" href="css/todomvc.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="todoapp">
+        <header class="header">
+            <h2 class="title">You have</h2>
+            <span class="emphasis" id="active-left">0</span>
+            <h2 class="title">items left</h2>
+            <!-- Add New Item -->
+            <div>
+                <button type="button" id="expand"></button>
+                <input class="todo-input" type="text" id="todo" placeholder="What do you want to do?" autofocus>
+                <input class="todo-input" type="date" id="todo-time" placeholder="yyyy/mm/dd">
+                <button type="button" id="add">Add Todo Item</button>
+            </div>
+        </header>
+
+        <section class="main">
+            <!-- Show List -->
+            <div class="core">
+                <ul class="todo-list" id="list"></ul>
+            </div>
+
+            <footer class="footer">
+                <button class="com-button complete-all">Complete All</button>
+                <button class="com-button hide-complete">Hide Completed List</button>
+                <button class="com-button clear-completed">Clear completed</button>
+            </footer>
+        </section>
+    </div>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
