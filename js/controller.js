@@ -46,8 +46,8 @@ window.onload = function() {
         var compAll = document.querySelector('.complete-all');
         compAll.addEventListener('click', updateStatusAll);
 
-        var compAll = document.querySelector('.hide-complete');
-        compAll.addEventListener('click', hideCompList);
+        var hideComp = document.querySelector('.hide-complete');
+        hideComp.addEventListener('click', hideCompList);
     });
 };
 
